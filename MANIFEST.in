@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include invoice_incomeacc *.css
+recursive-include invoice_incomeacc *.csv
+recursive-include invoice_incomeacc *.html
+recursive-include invoice_incomeacc *.ico
+recursive-include invoice_incomeacc *.js
+recursive-include invoice_incomeacc *.json
+recursive-include invoice_incomeacc *.md
+recursive-include invoice_incomeacc *.png
+recursive-include invoice_incomeacc *.py
+recursive-include invoice_incomeacc *.svg
+recursive-include invoice_incomeacc *.txt
+recursive-exclude invoice_incomeacc *.pyc
