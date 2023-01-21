@@ -12,7 +12,7 @@ frappe.ui.form.on("Sales Invoice", {
             let income_account = "";
 
             if (frm.doc.taxes_and_charges) {
-                frappe.msgprint("hello1");
+               
                 frappe.call('invoice_incomeacc.util.get_income_account', {
                     company: frm.doc.company,
                     sales_tax_t: frm.doc.taxes_and_charges,
