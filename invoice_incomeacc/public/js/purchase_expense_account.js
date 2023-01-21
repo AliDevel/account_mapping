@@ -19,12 +19,13 @@ frappe.ui.form.on("Purchase Invoice", {
                     console.log(r.message);
                     expense_account = r.message;
                     let i = 0
+                    if(expense_account){
                     for (; i < frm.doc.items.length; i++) {
                         console.log(expense_account);
-                        if (default_expense_account === frm.doc.items[i].expense_account) {
+                        if (default_expense_account === frm.doc.items[i].expense_account ) {
                             frm.doc.items[i].expense_account = expense_account;
                         }
-                    }
+                    }}
                 });
             };
         });

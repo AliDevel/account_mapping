@@ -21,12 +21,13 @@ frappe.ui.form.on("Sales Invoice", {
                     console.log(r.message);
                     income_account = r.message;
                     let i = 0
+                    if(income_account){
                     for (; i < frm.doc.items.length; i++) {
                         console.log(income_account);
                         if (default_income_account === frm.doc.items[i].income_account) {
                             frm.doc.items[i].income_account = income_account;
                         }
-                    }
+                    }}
                 });
             };
         });
